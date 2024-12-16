@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аккаунт Есть!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div id="logo" class="logo">
+          <a href="../index.html">Есть!</a>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a class="menu__item" href="./restaurants.html">Рестораны</a>
+            </li>
+            <li>
+              <a class="menu__item menu__item_active" href="./account.html"
+                >Аккаунт</a
+              >
+            </li>
+            <li><a class="menu__item" href="./order.html">Заказ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <section class="account">
+          <div class="account__title">Войти в аккаунт</div>
+          <form
+            class="account__form"
+            action="https://www.bing.com/search?"
+            name="UserEnter"
+            target="_blank"
+          >
+            <input type="hidden" name="q" value="search" />
+            <div class="form__item">
+              <label for="name">Имя:</label>
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label for="surname">Фамилия:</label>
+              <input
+                class="form__input"
+                type="text"
+                name="surname"
+                id="surname"
+                required
+              />
+            </div>
+
+            <div class="form__item">
+              <label for="phone">Телефон:</label>
+              <input
+                class="form__input"
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+                placeholder="+7(XXX)-XXX-XX-XX"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label>Город:</label>
+              <div>
+                <input
+                  type="radio"
+                  name="city"
+                  id="moscow"
+                  value="moscow"
+                  required
+                />
+                <label for="moscow">Москва</label>
+                <input
+                  type="radio"
+                  name="city"
+                  id="perm"
+                  value="perm"
+                  required
+                />
+                <label for="perm">Пермь</label>
+                <input
+                  type="radio"
+                  name="city"
+                  id="saratov"
+                  value="saratov"
+                  required
+                />
+                <label for="saratov">Саратов</label>
+              </div>
+            </div>
+            <div class="form__item">
+              <label for="password">Пароль:</label>
+              <input
+                class="form__input"
+                type="number"
+                name="password"
+                id="password"
+                min="0"
+                max="99999999"
+                required
+              />
+            </div>
+            <button class="form__button" type="submit">Вход</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div id="logo" class="logo logo__footer">
+          <a href="#logo">Есть!</a>
+        </div>
+        <div class="saved">© 2024 "Есть!".</div>
+      </div>
+    </footer>
+  </body>
+</html>
